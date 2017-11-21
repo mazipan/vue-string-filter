@@ -14,7 +14,7 @@ module.exports = {
     jsonpFunction: 'WebpackJsonp'
   },
   resolve: {
-    extensions: ['.js'],
+    extensions: ['.js', '.vue'],
     alias: {
       'vue$': 'vue/dist/vue.common.js'
     }

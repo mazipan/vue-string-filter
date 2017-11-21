@@ -22,6 +22,7 @@
 + `uppercase`
 + `lowercase`
 + `capitalize`
++ `titlecase`
 
 ## Download
 
@@ -48,7 +49,10 @@ Vue.use(VueStringFilter)
 #### Use in View :
 
 ```html
-<span>{{ 20000 | currency}}</span>
+<span>{{ stringWillFormatted | uppercase }}</span>
+<span>{{ stringWillFormatted | lowercase }}</span>
+<span>{{ stringWillFormatted | capitalize }}</span>
+<span>{{ stringWillFormatted | titlecase }}</span>
 ```
 
 
