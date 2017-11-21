@@ -1,0 +1,95 @@
+{
+  "name": "vue-string-filter",
+  "description": "Lightweight Vue 2 String Manipulation Filter",
+  "version": "1.0.0",
+  "license": "MIT",
+  "author": "Irfan Maulana (https://github.com/mazipan/)",
+  "homepage": "https://mazipan.github.io/vue-string-filter/",
+  "main": "./dist/VueStringFilter.bundle.js",
+  "keywords": [
+    "vue 2 string",
+    "vue string",
+    "vue string filter",
+    "vue filter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mazipan/vue-string-filter.git"
+  },
+  "bugs": {
+    "url": "https://github.com/mazipan/vue-string-filter/issues"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack-dev-server --hot --color --open --config webpack.dev.config.js",
+    "build": "cross-env NODE_ENV=production webpack --progress --hide-modules --config webpack.dev.config.js",
+    "pack": "cross-env NODE_ENV=production webpack --config webpack.config.js",
+    "dist": "npm run build && npm run pack",
+    "test": "./node_modules/.bin/jest --coverage"
+  },
+  "files": [
+    "dist/VueStringFilter.bundle.js",
+    "dist/VueStringFilter.bundle.js.gz",
+    "dist/VueStringFilter.bundle.js.map",
+    "VueStringFilter.js"
+  ],
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "compression": "^1.7.1",
+    "compression-webpack-plugin": "^1.0.1",
+    "cross-env": "^5.1.1",
+    "css-loader": "^0.28.7",
+    "es6-promise": "^4.1.1",
+    "eslint": "^4.11.0",
+    "eslint-plugin-vue": "3.13.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "friendly-errors-webpack-plugin": "^1.6.1",
+    "html-webpack-plugin": "^2.30.1",
+    "jest": "^21.2.1",
+    "jest-vue": "^0.8.2",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "vue": "^2.4.4",
+    "vue-loader": "^13.0.4",
+    "vue-template-compiler": "^2.4.4",
+    "vue-test-utils": "^1.0.0-beta.5",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.4",
+    "webpack-merge": "^4.1.1",
+    "webpack-shell-plugin": "^0.5.0"
+  },
+  "dependencies": {
+  },
+  "eslintIgnore": [
+    "test/*.js",
+    "dist/*.js",
+    "node_modules"
+  ],
+  "eslintConfig": {
+    "extends": [
+      "eslint:recommended",
+      "plugin:vue/recommended"
+    ]
+  },
+  "jest": {
+    "mapCoverage": true,
+    "coverageDirectory": "test/coverage",
+    "moduleNameMapper": {
+      "^vue$": "vue/dist/vue.common.js"
+    },
+    "moduleFileExtensions": [
+      "js",
+      "vue"
+    ],
+    "transform": {
+      "^.+\\.js$": "<rootDir>/node_modules/babel-jest",
+      ".*\\.(vue)$": "<rootDir>/node_modules/jest-vue"
+    }
+  }
+}
