@@ -9,16 +9,18 @@
 
 
 				<div>
-					<b>Before filter</b> : {{ textInput }}
+					<b>Before filter</b>: {{ textInput }}
 				</div>
 	      <div>
-					<b>Uppercase</b> : <b class="result__uppercase">{{ textInput | uppercase }}</b>
+					<b>Uppercase</b>: <span class="result__uppercase">{{ textInput | uppercase }}</span>
 					<br>
-					<b>Lowercase</b> : <b class="result__lowercase">{{ textInput | lowercase }}</b>
+					<b>Lowercase</b>: <span class="result__lowercase">{{ textInput | lowercase }}</span>
 					<br>
-					<b>Capitalize</b> : <b class="result__capitalize">{{ textInput | capitalize }}</b>
+					<b>Capitalize</b>: <span class="result__capitalize">{{ textInput | capitalize }}</span>
 					<br>
-					<b>Titlecase</b> : <b class="result__titlecase">{{ textInput | titlecase }}</b>
+					<b>Titlecase</b>: <span class="result__titlecase">{{ textInput | titlecase }}</span>
+					<br>
+					<b>Slug</b>: <span class="result__slug">{{ textInput | slug }}</span>
 					<br>
 				</div>
 

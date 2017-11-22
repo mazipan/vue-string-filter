@@ -23,6 +23,7 @@
 + `lowercase`
 + `capitalize`
 + `titlecase`
++ `slug`
 
 ## Download
 
@@ -53,6 +54,7 @@ Vue.use(VueStringFilter)
 <span>{{ stringWillFormatted | lowercase }}</span>
 <span>{{ stringWillFormatted | capitalize }}</span>
 <span>{{ stringWillFormatted | titlecase }}</span>
+<span>{{ stringWillFormatted | slug }}</span>
 ```
 
 
