@@ -58,5 +58,23 @@ describe('test VueStringFilter', () => {
       localVue
     })
   })
+  it('Test truncate', () => {    
+    let localVue = createLocalVue()
+    
+    localVue.use(VueStringFilter)
+
+    let wrapper = shallow(App, {
+      localVue
+    })
+  })
+  it('Test cut', () => {    
+    let localVue = createLocalVue()
+    
+    localVue.use(VueStringFilter)
+
+    let wrapper = shallow(App, {
+      localVue
+    })
+  })
 });
 

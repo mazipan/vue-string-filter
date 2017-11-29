@@ -38,19 +38,11 @@ const VueStringFilter = {
     })
 
     Vue.filter('truncate', function (value, count) {
-      if (typeof value === 'string') {
-        return value.length < count ? value : value.slice(0, count) + '...'
-      } else {
-        return value
-      }
+      value.length < count ? value : value.slice(0, count) + '...'
     })
 
     Vue.filter('cut', function (value, count) {
-      if (typeof value === 'string') {
-        return value.length < count ? value : value.slice(0, count)
-      } else {
-        return value
-      }
+      return value.length < count ? value : value.slice(0, count)
     })
     
   }
