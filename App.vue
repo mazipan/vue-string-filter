@@ -10,6 +10,8 @@
 
 				<div>
 					<b>Before filter</b>: {{ textInput }}
+					<br>
+					<br>
 				</div>
 	      <div>
 					<b>Uppercase</b>: <span class="result__uppercase">{{ textInput | uppercase }}</span>
@@ -21,6 +23,10 @@
 					<b>Titlecase</b>: <span class="result__titlecase">{{ textInput | titlecase }}</span>
 					<br>
 					<b>Slug</b>: <span class="result__slug">{{ textInput | slug }}</span>
+					<br>
+					<b>Truncate</b>: <span class="result__truncate">{{ textInput | truncate(10) }}</span>
+					<br>
+					<b>Cut</b>: <span class="result__cut">{{ textInput | cut(10) }}</span>
 					<br>
 				</div>
 

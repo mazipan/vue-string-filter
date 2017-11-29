@@ -1,7 +1,7 @@
 {
   "name": "vue-string-filter",
   "description": "Lightweight Vue 2 String Manipulation Filter",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "license": "MIT",
   "author": "Irfan Maulana (https://github.com/mazipan/)",
   "homepage": "https://mazipan.github.io/vue-string-filter/",

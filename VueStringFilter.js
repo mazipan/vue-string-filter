@@ -1,5 +1,5 @@
 const VueStringFilter = {
-  install(Vue, options) {
+  install(Vue) {
 
     Vue.filter('lowercase', function (value) {
 
@@ -37,6 +37,22 @@ const VueStringFilter = {
       return result
     })
 
+    Vue.filter('truncate', function (value, count) {
+      if (typeof value === 'string') {
+        return value.length < count ? value : value.slice(0, count) + '...'
+      } else {
+        return value
+      }
+    })
+
+    Vue.filter('cut', function (value, count) {
+      if (typeof value === 'string') {
+        return value.length < count ? value : value.slice(0, count)
+      } else {
+        return value
+      }
+    })
+    
   }
 }
 
