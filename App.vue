@@ -8,12 +8,14 @@
 	      <h1>Lightweight Vue 2 String Manipulation Filter By Irfan Maulana</h1>
 
 
-				<div>
-					<b>Before filter</b>: {{ textInput }}
-					<br>
-					<br>
-				</div>
+		<div>
+			<input v-model="textInput" class="textfield textfield--shadow"/>
+			<b>Before filter</b>: {{ textInput }}
+			<br>
+			<br>
+		</div>
 	      <div>
+	      			<h2>Result :</h2>
 					<b>Uppercase</b>: <span class="result__uppercase">{{ textInput | uppercase }}</span>
 					<br>
 					<b>Lowercase</b>: <span class="result__lowercase">{{ textInput | lowercase }}</span>
@@ -46,7 +48,7 @@ export default {
   name: 'app',
   data () {
     return {
-			textInput: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
+		textInput: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
     }
   }
 }

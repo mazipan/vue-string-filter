@@ -38,7 +38,7 @@ const VueStringFilter = {
     })
 
     Vue.filter('truncate', function (value, count) {
-      value.length < count ? value : value.slice(0, count) + '...'
+      return value.length < count ? value : value.slice(0, count) + '...'
     })
 
     Vue.filter('cut', function (value, count) {
