@@ -1,24 +1,17 @@
-# vue-string-filter
+# :scissors: Vue String Filter
 
-[![License](https://img.shields.io/github/license/mazipan/vue-string-filter.svg?maxAge=3600)](https://github.com/mazipan/vue-string-filter) 
-[![Github Issue](https://img.shields.io/github/issues/mazipan/vue-string-filter.svg?maxAge=3600)](https://github.com/mazipan/vue-string-filter/issues) 
-[![GitHub Fork](https://img.shields.io/github/forks/mazipan/vue-string-filter.svg?maxAge=3600)](https://github.com/mazipan/vue-string-filter/network) 
-[![GitHub Star](https://img.shields.io/github/stars/mazipan/vue-string-filter.svg?maxAge=3600)](https://github.com/mazipan/vue-string-filter/stargazers) 
+> Vue 2.x lightweight string manipulation filter
 
-[![version](https://img.shields.io/npm/v/vue-string-filter.svg)](https://www.npmjs.com/package/vue-string-filter)
-[![downloads monthly](https://img.shields.io/npm/dm/vue-string-filter.svg)](https://www.npmjs.com/package/vue-string-filter) 
-[![downloads](https://img.shields.io/npm/dt/vue-string-filter.svg)](https://www.npmjs.com/package/vue-string-filter) 
+[![License](https://img.shields.io/github/license/mazipan/vue-string-filter.svg?maxAge=3600)](https://github.com/mazipan/vue-string-filter) [![GitHub Star](https://img.shields.io/github/stars/mazipan/vue-string-filter.svg?maxAge=3600)](https://github.com/mazipan/vue-string-filter/stargazers) [![version](https://img.shields.io/npm/v/vue-string-filter.svg)](https://www.npmjs.com/package/vue-string-filter) [![downloads](https://img.shields.io/npm/dt/vue-string-filter.svg)](https://www.npmjs.com/package/vue-string-filter) [![Travis](https://img.shields.io/travis/mazipan/vue-string-filter.svg)](https://travis-ci.org/mazipan/vue-string-filter) [![codecov](https://codecov.io/gh/mazipan/vue-string-filter/branch/master/graph/badge.svg)](https://codecov.io/gh/mazipan/vue-string-filter)
 
-[![Travis](https://img.shields.io/travis/mazipan/vue-string-filter.svg)](https://travis-ci.org/mazipan/vue-string-filter)
-[![codecov](https://codecov.io/gh/mazipan/vue-string-filter/branch/master/graph/badge.svg)](https://codecov.io/gh/mazipan/vue-string-filter)
-
-:scissors: Lightweight Vue 2 String Manipulation Filter
 
 ## Demo
+
 [https://mazipan.github.io/vue-string-filter/](https://mazipan.github.io/vue-string-filter/)
 
 
 ## Available Filter
+
 + `uppercase`
 + `lowercase`
 + `capitalize`
@@ -29,13 +22,11 @@
 
 ## Download
 
-NPM :
 ```bash
+# NPM
 npm install vue-string-filter
-```
 
-Yarn :
-```bash
+# Yarn
 yarn add vue-string-filter
 ```
 
@@ -48,7 +39,6 @@ import VueStringFilter from 'vue-string-filter'
 Vue.use(VueStringFilter)
 ```
 
-
 #### Use in View :
 
 ```html
@@ -60,7 +50,6 @@ Vue.use(VueStringFilter)
 <span>{{ stringWillFormatted | truncate(10) }}</span>
 <span>{{ stringWillFormatted | cut(10) }}</span>
 ```
-
 
 ## Contributing
 
