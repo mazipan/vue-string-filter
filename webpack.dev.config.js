@@ -16,12 +16,12 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.vue'],
     alias: {
-      'vue$': 'vue/dist/vue.common.js'
+      'vue$': 'vue/dist/vue.common.js',
       'src': path.resolve(__dirname, 'dist'),
     }
   },
   module: {
-    rules: [      
+    rules: [
       {
         test: /\.vue$/,
         loader: 'vue-loader',
