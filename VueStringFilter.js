@@ -44,6 +44,14 @@ const VueStringFilter = {
     Vue.filter('cut', function (value, count) {
       return value.length < count ? value : value.slice(0, count)
     })
+
+    Vue.filter('replace', function (value, replacement) {
+      return value.replace(new RegExp(value, 'g'), replacement)
+    })
+
+    Vue.filter('replace_first', function (value, replacement) {
+      return value.replace(value, replacement)
+    })
     
   }
 }
