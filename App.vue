@@ -55,9 +55,9 @@ export default {
   data() {
     return {
       textInput: 'Lorem ipsum dolor sit amet, consectetur adipiscing, elit.',
-    };
-  },
-};
+    }
+  }
+}
 </script>
 
 <style lang="scss">
