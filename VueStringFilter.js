@@ -60,6 +60,10 @@ const VueStringFilter = {
     Vue.filter('replace_first', function (value, replacement) {
       return value.replace(value, replacement)
     })
+
+    Vue.filter('append', function (value, string) {
+      return value.toString().concat(string)
+    })
   }
 }
 
