@@ -46,7 +46,7 @@ const VueStringFilter = {
     })
 
     Vue.filter('remove', function (value, removalTarget) {
-      return value.replace(new RegExp(value, 'g'), '')
+      return value.replace(new RegExp(removalTarget, 'g'), '')
     })
 
     Vue.filter('remove_first', function (value, removalTarget) {
