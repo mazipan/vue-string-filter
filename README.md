@@ -19,6 +19,11 @@
 + `slug`
 + `truncate`
 + `cut`
++ `remove`
++ `remove_first`
++ `replace`
++ `replace_first`
++ `append`
 
 ## Download
 
@@ -49,6 +54,11 @@ Vue.use(VueStringFilter)
 <span>{{ stringWillFormatted | slug }}</span>
 <span>{{ stringWillFormatted | truncate(10) }}</span>
 <span>{{ stringWillFormatted | cut(10) }}</span>
+<span>{{ stringWillFormatted | remove('string to remove') }}</span>
+<span>{{ stringWillFormatted | remove_first('string to remove') }}</span>
+<span>{{ stringWillFormatted | replace(' string to replace') }}</span>
+<span>{{ stringWillFormatted | replace_first('string to replace') }}</span>
+<span>{{ stringWillFormatted | append('string to append') }}</span>
 ```
 
 ## Contributing
