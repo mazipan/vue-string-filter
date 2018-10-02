@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== 'production') { // eslint-disable-line no-undef
   Vue.config.devtools = true
 }
 
