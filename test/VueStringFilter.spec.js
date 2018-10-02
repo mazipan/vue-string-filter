@@ -84,6 +84,8 @@ describe('test VueStringFilter', () => {
     let wrapper = shallow(App, {
       localVue
     })
+    // Test rendered HTML output of the append filter
+    expect(wrapper.html()).toContain('This is append string.')
   })
 });
 
