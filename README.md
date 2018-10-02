@@ -25,7 +25,6 @@
 + `replace_first`
 + `append`
 
-
 ## Download
 
 ```bash
