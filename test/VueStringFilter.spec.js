@@ -24,6 +24,10 @@ describe('test VueStringFilter', () => {
     let wrapper = shallow(App, {
       localVue
     })
+
+    wrapper.setData({ textInput: 'Vue string for lowercase filter testing' })
+
+    expect(wrapper.html()).toContain('vue-string-for-lowercase-filter-testing');
   })
   it('Test uppercase', () => {
     let localVue = createLocalVue()
@@ -33,6 +37,10 @@ describe('test VueStringFilter', () => {
     let wrapper = shallow(App, {
       localVue
     })
+
+    wrapper.setData({ textInput: 'string for uppercase filter testing' })
+
+    expect(wrapper.html()).toContain('STRING FOR UPPERCASE FILTER TESTING');
   })
   it('Test titlecase', () => {
     let localVue = createLocalVue()
@@ -42,6 +50,10 @@ describe('test VueStringFilter', () => {
     let wrapper = shallow(App, {
       localVue
     })
+
+    wrapper.setData({ textInput: 'string for titlecase filter testing' })
+
+    expect(wrapper.html()).toContain('String For Titlecase Filter Testing');
   })
   it('Test capitalize', () => {
     let localVue = createLocalVue()
@@ -51,6 +63,10 @@ describe('test VueStringFilter', () => {
     let wrapper = shallow(App, {
       localVue
     })
+
+    wrapper.setData({ textInput: 'string for capitalize filter testing' })
+
+    expect(wrapper.html()).toContain('String for capitalize filter testing');
   })
   it('Test slug', () => {
     let localVue = createLocalVue()
@@ -60,6 +76,10 @@ describe('test VueStringFilter', () => {
     let wrapper = shallow(App, {
       localVue
     })
+
+    wrapper.setData({ textInput: 'string for slug filter testing' })
+
+    expect(wrapper.html()).toContain('string-for-slug-filter-testing');
   })
   it('Test truncate', () => {
     let localVue = createLocalVue()
@@ -69,6 +89,10 @@ describe('test VueStringFilter', () => {
     let wrapper = shallow(App, {
       localVue
     })
+
+    wrapper.setData({ textInput: 'string for truncate filter testing' })
+
+    expect(wrapper.html()).toContain('string for...');
   })
   it('Test cut', () => {
     let localVue = createLocalVue()
@@ -78,6 +102,10 @@ describe('test VueStringFilter', () => {
     let wrapper = shallow(App, {
       localVue
     })
+
+    wrapper.setData({ textInput: 'string for cut filter testing' })
+
+    expect(wrapper.html()).toContain('string for');
   })
   it('Test append', () => {
     let localVue = createLocalVue()
