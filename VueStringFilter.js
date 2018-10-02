@@ -48,6 +48,10 @@ const VueStringFilter = {
     Vue.filter('replace', function (value, replacement) {
       return value.replace(new RegExp(value, 'g'), replacement)
     })
+
+    Vue.filter('replace_first', function (value, replacement) {
+      return value.replace(value, replacement)
+    })
     
   }
 }
