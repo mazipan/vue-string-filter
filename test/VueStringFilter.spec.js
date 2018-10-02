@@ -76,5 +76,23 @@ describe('test VueStringFilter', () => {
       localVue
     })
   })
+  it('Test replace', () => {    
+    let localVue = createLocalVue()
+    
+    localVue.use(VueStringFilter)
+
+    let wrapper = shallow(App, {
+      localVue
+    })
+  })
+  it('Test replace_first', () => {    
+    let localVue = createLocalVue()
+    
+    localVue.use(VueStringFilter)
+
+    let wrapper = shallow(App, {
+      localVue
+    })
+  })
 });
 
