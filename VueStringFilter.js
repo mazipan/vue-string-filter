@@ -18,13 +18,13 @@ const VueStringFilter = {
 
     Vue.filter('titlecase', function (value) {
 
-      return value.replace(/\w\S*/g, function (txt) { 
-        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase() 
+      return value.replace(/\w\S*/g, function (txt) {
+        return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase()
       })
     })
-    
+
     Vue.filter('slug', function (value) {
-      
+
       // credit for gist : https://gist.github.com/mathewbyrne/1280286
       let result = value.toString()
                         .toLowerCase()
@@ -33,7 +33,7 @@ const VueStringFilter = {
                         .replace(/[\s\W-]+/g, '-')
                         .replace(/--+/g, '-')
                         .replace(/^-+|-+$/g, '')
-                        
+
       return result
     })
 
@@ -52,7 +52,10 @@ const VueStringFilter = {
     Vue.filter('replace_first', function (value, replacement) {
       return value.replace(value, replacement)
     })
-    
+
+    Vue.filter('append', function (value, string) {
+      return value.toString().concat(string)
+    })
   }
 }
 

@@ -4,72 +4,81 @@ import App from '../App.vue'
 import VueStringFilter from '../VueStringFilter'
 
 describe('test VueStringFilter', () => {
-  it('Test with all default config', () => {    
+  it('Test with all default config', () => {
     let localVue = createLocalVue()
-    
+
     localVue.use(VueStringFilter)
 
     let wrapper = shallow(App, {
       localVue
     })
   })
-  it('Test lowercase', () => {    
+  it('Test lowercase', () => {
     let localVue = createLocalVue()
-    
+
     localVue.use(VueStringFilter)
 
     let wrapper = shallow(App, {
       localVue
     })
   })
-  it('Test uppercase', () => {    
+  it('Test uppercase', () => {
     let localVue = createLocalVue()
-    
+
     localVue.use(VueStringFilter)
 
     let wrapper = shallow(App, {
       localVue
     })
   })
-  it('Test titlecase', () => {    
+  it('Test titlecase', () => {
     let localVue = createLocalVue()
-    
+
     localVue.use(VueStringFilter)
 
     let wrapper = shallow(App, {
       localVue
     })
   })
-  it('Test capitalize', () => {    
+  it('Test capitalize', () => {
     let localVue = createLocalVue()
-    
+
     localVue.use(VueStringFilter)
 
     let wrapper = shallow(App, {
       localVue
     })
   })
-  it('Test slug', () => {    
+  it('Test slug', () => {
     let localVue = createLocalVue()
-    
+
     localVue.use(VueStringFilter)
 
     let wrapper = shallow(App, {
       localVue
     })
   })
-  it('Test truncate', () => {    
+  it('Test truncate', () => {
     let localVue = createLocalVue()
-    
+
     localVue.use(VueStringFilter)
 
     let wrapper = shallow(App, {
       localVue
     })
   })
-  it('Test cut', () => {    
+  it('Test cut', () => {
     let localVue = createLocalVue()
-    
+
+    localVue.use(VueStringFilter)
+
+    let wrapper = shallow(App, {
+      localVue
+    })
+  })
+  it('Test append', () => {
+    let localVue = createLocalVue()
+
     localVue.use(VueStringFilter)
 
     let wrapper = shallow(App, {
