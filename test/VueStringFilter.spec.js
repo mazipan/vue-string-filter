@@ -87,6 +87,26 @@ describe('test VueStringFilter', () => {
     let wrapper = shallow(App, {
       localVue
     })
+    // Test rendered HTML output of the append filter
+    expect(wrapper.html()).toContain('This is append string.')
+  })
+  it('Test replace', () => {    
+    let localVue = createLocalVue()
+    
+    localVue.use(VueStringFilter)
+
+    let wrapper = shallow(App, {
+      localVue
+    })
+  })
+  it('Test replace_first', () => {    
+    let localVue = createLocalVue()
+    
+    localVue.use(VueStringFilter)
+
+    let wrapper = shallow(App, {
+      localVue
+    })
   })
   it('Test remove', () => {
     let localVue = createLocalVue()
