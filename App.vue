@@ -30,8 +30,12 @@
 					<br>
 					<b>Cut</b>: <span class="result__cut">{{ textInput | cut(10) }}</span>
 					<br>
-                    <b>Append</b>: <span class="result__append">{{ textInput | append('This is append string.') }}</span>
-                    <br>
+          <b>Append</b>: <span class="result__append">{{ textInput | append('This is append string.') }}</span>
+          <br>
+          <b>Remove</b>: <span class="result__remove">{{ textInput | remove(',') }}</span>
+					<br>
+          <b>Remove First</b>: <span class="result__remove_first">{{ textInput | remove_first(',') }}</span>
+					<br>
 				</div>
 
 
@@ -48,16 +52,16 @@
 <script>
 export default {
   name: 'app',
-  data () {
+  data() {
     return {
-		textInput: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.'
-    }
-  }
-}
+      textInput: 'Lorem ipsum dolor sit amet, consectetur adipiscing, elit.',
+    };
+  },
+};
 </script>
 
 <style lang="scss">
-.m-b-5{
-	margin-bottom: 5px;
+.m-b-5 {
+  margin-bottom: 5px;
 }
 </style>

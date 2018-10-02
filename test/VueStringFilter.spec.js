@@ -1,4 +1,7 @@
-import { createLocalVue, shallow } from 'vue-test-utils'
+import {
+  createLocalVue,
+  shallow
+} from 'vue-test-utils'
 
 import App from '../App.vue'
 import VueStringFilter from '../VueStringFilter'
@@ -85,5 +88,26 @@ describe('test VueStringFilter', () => {
       localVue
     })
   })
-});
+  it('Test remove', () => {
+    let localVue = createLocalVue()
 
+    localVue.use(VueStringFilter)
+
+    let wrapper = shallow(App, {
+      localVue
+    })
+
+    expect(wrapper.text()).toContain('Lorem ipsum dolor sit amet consectetur adipiscing elit.')
+  })
+  it('Test remove_first', () => {
+    let localVue = createLocalVue()
+
+    localVue.use(VueStringFilter)
+
+    let wrapper = shallow(App, {
+      localVue
+    })
+
+    expect(wrapper.text()).toContain('Lorem ipsum dolor sit amet consectetur adipiscing, elit.')
+  })
+});
