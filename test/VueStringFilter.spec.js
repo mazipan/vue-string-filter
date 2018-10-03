@@ -1,7 +1,7 @@
 import {
   createLocalVue,
-  shallow
-} from 'vue-test-utils'
+  shallowMount
+} from '@vue/test-utils'
 
 import App from '../App.vue'
 import VueStringFilter from '../VueStringFilter'
@@ -12,7 +12,7 @@ describe('test VueStringFilter', () => {
 
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
   })
@@ -21,7 +21,7 @@ describe('test VueStringFilter', () => {
 
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
 
@@ -34,7 +34,7 @@ describe('test VueStringFilter', () => {
 
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
 
@@ -47,7 +47,7 @@ describe('test VueStringFilter', () => {
 
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
 
@@ -60,7 +60,7 @@ describe('test VueStringFilter', () => {
 
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
 
@@ -73,7 +73,7 @@ describe('test VueStringFilter', () => {
 
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
 
@@ -86,7 +86,7 @@ describe('test VueStringFilter', () => {
 
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
 
@@ -99,7 +99,7 @@ describe('test VueStringFilter', () => {
 
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
 
@@ -112,7 +112,7 @@ describe('test VueStringFilter', () => {
 
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
     // Test rendered HTML output of the append filter
@@ -123,7 +123,7 @@ describe('test VueStringFilter', () => {
     
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
   })
@@ -132,7 +132,7 @@ describe('test VueStringFilter', () => {
     
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
   })
@@ -141,7 +141,7 @@ describe('test VueStringFilter', () => {
 
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
 
@@ -152,7 +152,7 @@ describe('test VueStringFilter', () => {
 
     localVue.use(VueStringFilter)
 
-    let wrapper = shallow(App, {
+    let wrapper = shallowMount(App, {
       localVue
     })
 

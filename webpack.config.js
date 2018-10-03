@@ -18,6 +18,7 @@ module.exports = {
     umdNamedDefine: true,
     jsonpFunction: 'WebpackJsonp'
   },
+  mode: 'production',
   resolve: {
     extensions: ['.js', ],
     alias: {
@@ -26,26 +27,47 @@ module.exports = {
   },
   devtool: '#source-map',
   module: {
-    rules: [
-          
+    rules: [{
+        test: /\.css$/,
+        use: [
+          'vue-style-loader',
+          'css-loader'
+        ],
+      },
+      {
+        test: /\.scss$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader'
+        ],
+      },
+      {
+        test: /\.sass$/,
+        use: [
+          'vue-style-loader',
+          'css-loader',
+          'sass-loader?indentedSyntax'
+        ],
+      },
       {
         test: /\.vue$/,
         loader: 'vue-loader',
         options: {
           loaders: {
-            // Since sass-loader (weirdly) has SCSS as its default parse mode, we map
-            // the "scss" and "sass" values for the lang attribute to the right configs here.
-            // other preprocessors should work out of the box, no loader config like this necessary.
-            'scss': 'vue-style-loader!css-loader!sass-loader',
-            'sass': 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
+            js: 'babel-loader',
+            scss: 'vue-style-loader!css-loader!sass-loader',
+            sass: 'vue-style-loader!css-loader!sass-loader?indentedSyntax'
           }
-          // other vue-loader options go here
         }
       },
       {
         test: /\.js$/,
         exclude: path.resolve(__dirname, 'node_modules'),
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        options: {
+          presets: ['@babel/preset-env']
+        }
       }
     ]
   },
@@ -58,6 +80,7 @@ module.exports = {
         'NODE_ENV': '"production"'
       }
     }),
+    new VueLoaderPlugin(),
     new webpack.optimize.UglifyJsPlugin({
       compress: {
         warnings: false

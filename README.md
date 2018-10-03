@@ -4,11 +4,9 @@
 
 [![License](https://img.shields.io/github/license/mazipan/vue-string-filter.svg?maxAge=3600)](https://github.com/mazipan/vue-string-filter) [![GitHub Star](https://img.shields.io/github/stars/mazipan/vue-string-filter.svg?maxAge=3600)](https://github.com/mazipan/vue-string-filter/stargazers) [![version](https://img.shields.io/npm/v/vue-string-filter.svg)](https://www.npmjs.com/package/vue-string-filter) [![downloads](https://img.shields.io/npm/dt/vue-string-filter.svg)](https://www.npmjs.com/package/vue-string-filter) [![Travis](https://img.shields.io/travis/mazipan/vue-string-filter.svg)](https://travis-ci.org/mazipan/vue-string-filter) [![codecov](https://codecov.io/gh/mazipan/vue-string-filter/branch/master/graph/badge.svg)](https://codecov.io/gh/mazipan/vue-string-filter)
 
-
 ## Demo
 
 [https://mazipan.github.io/vue-string-filter/](https://mazipan.github.io/vue-string-filter/)
-
 
 ## Available Filter
 
@@ -37,14 +35,14 @@ yarn add vue-string-filter
 
 ## Sample Usage
 
-#### Use Plugins :
+### Use Plugins
 
 ```javascript
 import VueStringFilter from 'vue-string-filter'
 Vue.use(VueStringFilter)
 ```
 
-#### Use in View :
+### Use in View
 
 ```html
 <span>{{ stringWillFormatted | uppercase }}</span>
@@ -65,5 +63,6 @@ Vue.use(VueStringFilter)
 
 If you'd like to contribute, head to the [contributing guidelines](/CONTRIBUTING.md). Inside you'll find directions for opening issues, coding standards, and notes on development.
 
+------
 
 Copyright © 2018 Built with ❤️ by Irfan Maulana
