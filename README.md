@@ -56,7 +56,7 @@ Vue.use(VueStringFilter)
 <span>{{ stringWillFormatted | remove_first('stringToRemove') }}</span>
 <span>{{ stringWillFormatted | replace('stringToReplace') }}</span>
 <span>{{ stringWillFormatted | replace_first('stringToReplace') }}</span>
-<span>{{ stringWillFormatted | append('StringToAppend') }}</span>
+<span>{{ stringWillFormatted | append('stringToAppend') }}</span>
 ```
 
 ## Contributing
