@@ -2,6 +2,7 @@ var webpack = require('webpack')
 var path = require('path')
 var npm = require("./package.json")
 const CompressionPlugin = require("compression-webpack-plugin")
+const VueLoaderPlugin = require('vue-loader/lib/plugin')
 
 require('es6-promise').polyfill();
 
@@ -19,6 +20,9 @@ module.exports = {
     jsonpFunction: 'WebpackJsonp'
   },
   mode: 'production',
+  optimization: {
+    minimize: true
+  },
   resolve: {
     extensions: ['.js', ],
     alias: {
@@ -81,12 +85,6 @@ module.exports = {
       }
     }),
     new VueLoaderPlugin(),
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warnings: false
-      },
-      sourceMap: false
-    }),
     new webpack.BannerPlugin({
       banner: `VueStringFilter v.${npm.version}`
     }),
