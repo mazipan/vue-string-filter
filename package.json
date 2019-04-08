@@ -37,7 +37,7 @@
 		"webpack": "^4.20.2",
 		"webpack-cli": "^3.1.2",
 		"webpack-dev-server": "^3.1.9",
-		"webpack-serve": "^2.0.2",
+		"webpack-serve": "^3.0.0",
 		"workbox-webpack-plugin": "^4.1.1"
 	},
 	"eslintConfig": {
