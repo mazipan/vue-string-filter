@@ -28,7 +28,7 @@
 		"jest-serializer-vue": "^2.0.2",
 		"vue-jest": "^3.0.4",
 		"node-sass": "^4.9.3",
-		"sass-loader": "^7.1.0",
+		"sass-loader": "^8.0.0",
 		"vue": "^2.5.17",
 		"vue-loader": "^15.4.2",
 		"vue-template-compiler": "^2.5.17",
