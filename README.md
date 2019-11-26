@@ -42,6 +42,36 @@ import VueStringFilter from 'vue-string-filter'
 Vue.use(VueStringFilter)
 ```
 
+#### Import Individual Filters
+
+```javascript
+import Vue from 'vue'
+
+import append 'vue-string-filter/filters/append'
+import capitalize 'vue-string-filter/filters/capitalize'
+import cut 'vue-string-filter/filters/cut'
+import lowercase 'vue-string-filter/filters/lowercase'
+import remove_first 'vue-string-filter/filters/remove-first'
+import remove 'vue-string-filter/filters/remove'
+import replace_first 'vue-string-filter/filters/replace-first'
+import replace 'vue-string-filter/filters/replace'
+import slug 'vue-string-filter/filters/slug'
+import titlecase 'vue-string-filter/filters/titlecase'
+import truncate 'vue-string-filter/filters/truncate'
+import uppercase 'vue-string-filter/filters/uppercase'
+
+Vue.filter('cut', cut)
+Vue.filter('lowercase', lowercase)
+Vue.filter('remove_first', remove_first)
+Vue.filter('remove', remove)
+Vue.filter('replace_first', replace_first)
+Vue.filter('replace', replace)
+Vue.filter('slug', slug)
+Vue.filter('titlecase', titlecase)
+Vue.filter('truncate', truncate)
+Vue.filter('uppercase', uppercase)
+```
+
 ### Use in View
 
 ```html
@@ -65,4 +95,4 @@ If you'd like to contribute, head to the [contributing guidelines](/CONTRIBUTING
 
 ------
 
-Copyright © 2018 Built with ❤️ by Irfan Maulana
+Copyright © 2019 Built with ❤️ by Irfan Maulana
