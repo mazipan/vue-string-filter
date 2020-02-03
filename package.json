@@ -1,58 +1,29 @@
 {
   "name": "vue-string-filter",
-  "description": "Lightweight Vue filter for string manipulation ",
   "version": "2.0.0",
-  "license": "MIT",
   "private": false,
+  "description": "Lightweight Vue filter for string manipulation ",
+  "author": "Irfan Maulana (https://github.com/mazipan/)",
   "scripts": {
-    "dev": "vue-cli-service serve",
     "serve": "vue-cli-service serve",
-    "prepare": "yarn build:lib",
+    "test:unit": "vue-cli-service test:unit",
+    "lint": "vue-cli-service lint --fix",
     "build:demo": "cross-env NODE_ENV=production vue-cli-service build",
     "build:lib": "cross-env NODE_ENV=production tsc ./src/lib/VueStringFilter.ts -m CommonJS --outDir ./libs",
     "check:size": "node ./check-size.js",
-    "lint": "vue-cli-service lint --fix",
-    "test": "jest"
+    "dev": "vue-cli-service serve",
+    "prepare": "yarn build:lib"
   },
-  "lint-staged": {
-    "*.{js,vue}": [
-      "yarn lint",
-      "git add"
-    ]
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "author": "Irfan Maulana (https://github.com/mazipan/)",
-  "homepage": "https://mazipan.github.io/vue-currency-filter/",
   "main": "libs/VueStringFilter.js",
   "module": "libs/VueStringFilter.js",
   "unpkg": "libs/VueStringFilter.js",
-  "jsdelivr": "libs/VueStringFilter.js",
-  "typings": "types/index.d.ts",
   "files": [
     "libs",
     "types"
   ],
-  "keywords": [
-    "vue string",
-    "vue string filter",
-    "vue filter"
-  ],
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mazipan/vue-string-filter.git"
-  },
-  "bugs": {
-    "url": "https://github.com/mazipan/vue-string-filter/issues"
-  },
-  "peerDependencies": {
-    "vue": "2.6.11"
-  },
   "dependencies": {},
   "devDependencies": {
+    "@types/jest": "^24.0.19",
     "@types/node": "12.12.22",
     "@typescript-eslint/eslint-plugin": "2.13.0",
     "@typescript-eslint/parser": "2.13.0",
@@ -97,5 +68,35 @@
     "vue-script2": "2.1.0",
     "vue-template-compiler": "2.6.11",
     "vuex": "3.1.2"
-  }
+  },
+  "peerDependencies": {
+    "vue": "2.6.11"
+  },
+  "bugs": {
+    "url": "https://github.com/mazipan/vue-string-filter/issues"
+  },
+  "homepage": "https://mazipan.github.io/vue-currency-filter/",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "jsdelivr": "libs/VueStringFilter.js",
+  "keywords": [
+    "vue string",
+    "vue string filter",
+    "vue filter"
+  ],
+  "license": "MIT",
+  "lint-staged": {
+    "*.{js,vue}": [
+      "yarn lint",
+      "git add"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mazipan/vue-string-filter.git"
+  },
+  "typings": "types/index.d.ts"
 }

@@ -1,22 +1,18 @@
 import { createLocalVue, shallowMount } from "@vue/test-utils";
 
-import VueStringFilter from "../src/lib/VueStringFilter";
+import VueStringFilter from "../../src/lib/VueStringFilter";
 import { VueConstructor } from "vue";
 import { getComponent, getTextInput } from "./utils";
 
-beforeAll(() => {
-  const localVue = createLocalVue();
+describe.skip("vue-string-filter", () => {
 
+  const localVue = createLocalVue();
   localVue.use(VueStringFilter);
 
-  global.localVue = localVue;
-});
-
-describe("vue-string-filter", () => {
   it("lowercase", () => {
     const component = getComponent("lowercase") as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({
@@ -29,7 +25,7 @@ describe("vue-string-filter", () => {
   it("uppercase", () => {
     const component = getComponent("uppercase") as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({
@@ -42,7 +38,7 @@ describe("vue-string-filter", () => {
   it("capitalize", () => {
     const component = getComponent("capitalize") as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({
@@ -55,7 +51,7 @@ describe("vue-string-filter", () => {
   it("titlecase", () => {
     const component = getComponent("titlecase") as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({
@@ -68,7 +64,7 @@ describe("vue-string-filter", () => {
   it("slug", () => {
     const component = getComponent("slug") as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({
@@ -81,7 +77,7 @@ describe("vue-string-filter", () => {
   it("truncate", () => {
     const component = getComponent("truncate(6)") as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({
@@ -94,7 +90,7 @@ describe("vue-string-filter", () => {
   it("cut", () => {
     const component = getComponent("cut(6)") as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({
@@ -107,7 +103,7 @@ describe("vue-string-filter", () => {
   it("remove", () => {
     const component = getComponent(`remove('remove ')`) as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({
@@ -122,7 +118,7 @@ describe("vue-string-filter", () => {
       `remove_first('remove first ')`
     ) as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({
@@ -135,7 +131,7 @@ describe("vue-string-filter", () => {
   it("replace", () => {
     const component = getComponent(`replace('replaced')`) as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({
@@ -150,7 +146,7 @@ describe("vue-string-filter", () => {
       `replace_first('replaced')`
     ) as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({
@@ -163,7 +159,7 @@ describe("vue-string-filter", () => {
   it("append", () => {
     const component = getComponent(`append(' is appended')`) as VueConstructor;
     const wrapper = shallowMount(component, {
-      localVue: global.localVue
+      localVue
     });
 
     wrapper.setData({

@@ -11,15 +11,13 @@ cache:
 install:
   - yarn install
 script:
-  - yarn build:demo
-  # only for test the build process
   - yarn build:lib
   - yarn check:size
-  # temporary hide
-  # - yarn test
-# after_script:
-  # - npm install -g codecov
-  # - codecov
+  - yarn test
+  - yarn build:demo
+after_script:
+  - npm install -g codecov
+  - codecov
 deploy:
   provider: pages
   skip-cleanup: true

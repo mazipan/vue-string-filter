@@ -2,11 +2,12 @@ module.exports = {
   verbose: true,
   collectCoverage: true,
   collectCoverageFrom: [
+    '!**/lib/index.ts',
     '**/lib/*.ts',
     '!**/node_modules/**'
   ],
-  coverageDirectory: 'test/coverage',
-  preset: 'ts-jest',
+  coverageDirectory: 'coverage',
+  preset: '@vue/cli-plugin-unit-jest/presets/typescript-and-babel',
   globals: {
     'ts-jest': {
       babelConfig: true
