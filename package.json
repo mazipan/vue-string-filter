@@ -7,6 +7,7 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "test:unit": "vue-cli-service test:unit",
+    "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint --fix",
     "build:demo": "cross-env NODE_ENV=production vue-cli-service build",
     "build:lib": "cross-env NODE_ENV=production tsc ./src/lib/VueStringFilter.ts -m CommonJS --outDir ./libs",
