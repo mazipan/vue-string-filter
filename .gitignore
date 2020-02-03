@@ -58,4 +58,4 @@ typings/
 .env
 
 dist/
-lib/*.js
+libs/*.js
