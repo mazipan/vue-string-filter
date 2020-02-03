@@ -1,6 +1,6 @@
 import { createLocalVue, shallowMount } from "@vue/test-utils";
 
-import VueStringFilter from "../lib/vue-string-filter";
+import VueStringFilter from "../src/lib/VueStringFilter";
 import { VueConstructor } from "vue";
 import { getComponent, getTextInput } from "./utils";
 

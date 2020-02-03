@@ -1,15 +1,15 @@
-import lowercase from "../lib/filters/lowercase";
-import uppercase from "../lib/filters/uppercase";
-import capitalize from "../lib/filters/capitalize";
-import titlecase from "../lib/filters/titlecase";
-import slug from "../lib/filters/slug";
-import truncate from "../lib/filters/truncate";
-import cut from "../lib/filters/cut";
-import remove from "../lib/filters/remove";
-import remove_first from "../lib/filters/remove-first";
-import replace from "../lib/filters/replace";
-import replace_first from "../lib/filters/replace-first";
-import append from "../lib/filters/append";
+import lowercase from "../src/lib/lowercase";
+import uppercase from "../src/lib/uppercase";
+import capitalize from "../src/lib/capitalize";
+import titlecase from "../src/lib/titlecase";
+import slug from "../src/lib/slug";
+import truncate from "../src/lib/truncate";
+import cut from "../src/lib/cut";
+import remove from "../src/lib/remove";
+import remove_first from "../src/lib/remove-first";
+import replace from "../src/lib/replace";
+import replace_first from "../src/lib/replace-first";
+import append from "../src/lib/append";
 import { getTextInput } from "./utils";
 
 describe("filters", () => {

@@ -1,16 +1,17 @@
 module.exports = {
   root: true,
   env: {
-    browser: true,
     node: true
   },
-  parser: '@typescript-eslint/parser',
-  parserOptions: {
-    sourceType: 'module'
-  },
-  extends: ['plugin:@typescript-eslint/recommended', 'prettier'],
-  plugins: ['import', 'prettier'],
-  "rules": {
+  'extends': [
+    'plugin:vue/essential',
+    '@vue/standard',
+    '@vue/typescript'
+  ],
+  rules: {
+    'no-console': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-debugger': process.env.NODE_ENV === 'production' ? 'error' : 'off',
+    'no-tabs': 'off',
     "@typescript-eslint/camelcase": "off",
     "@typescript-eslint/no-empty-interface": "off",
     'no-useless-constructor': 'off',
@@ -18,5 +19,8 @@ module.exports = {
     'no-undef': 'off',
     'no-new': 'off',
     'eol-last': 'off'
+  },
+  parserOptions: {
+    parser: '@typescript-eslint/parser'
   }
-};
+}

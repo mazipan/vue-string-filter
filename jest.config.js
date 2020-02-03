@@ -2,7 +2,6 @@ module.exports = {
   verbose: true,
   collectCoverage: true,
   collectCoverageFrom: [
-    // 'VueStringFilter.js',
     '**/lib/*.ts',
     '!**/node_modules/**'
   ],
@@ -20,5 +19,5 @@ module.exports = {
   transform: {
     '.*\\.(vue)$': 'vue-jest'
   },
-  snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue'],
+  snapshotSerializers: ['<rootDir>/node_modules/jest-serializer-vue']
 }

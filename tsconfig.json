@@ -1,14 +1,31 @@
 {
   "compilerOptions": {
-    "outDir": "./dist",
-    "noImplicitAny": true,
-    "module": "commonjs",
     "target": "es5",
-    "esModuleInterop": true,
-    "sourceMap": true,
+    "module": "commonjs",
     "declaration": true,
     "strict": true,
-    "resolveJsonModule": true,
+    "jsx": "preserve",
+    "importHelpers": true,
+    "moduleResolution": "node",
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "experimentalDecorators": true,
+    "allowJs": true,
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
+    "sourceMap": true,
+    "baseUrl": ".",
+    "types": [
+      "node"
+    ],
+    "paths": {
+      "@/*": [
+        "src/*"
+      ],
+      "@lib/*": [
+        "src/lib/*"
+      ]
+    },
     "lib": [
       "esnext",
       "dom",
@@ -17,10 +34,14 @@
     ]
   },
   "include": [
-    "lib/**/*.ts",
+    "src/lib/**/*.ts",
+    "src/lib/**/*.tsx",
+    "src/lib/**/*.vue",
+    "src/**/*.ts",
+    "src/**/*.tsx",
     "src/**/*.vue",
-    "test/**/*.ts",
-    "test/**/*.tsx"
+    "tests/**/*.ts",
+    "tests/**/*.tsx"
   ],
   "exclude": [
     "node_modules"

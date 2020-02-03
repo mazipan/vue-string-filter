@@ -1,6 +1,6 @@
 # :scissors: Vue String Filter
 
-> Vue 2.x lightweight string manipulation filter
+> Lightweight Vue filter for string manipulation
 
 [![License](https://img.shields.io/github/license/mazipan/vue-string-filter.svg?maxAge=3600)](https://github.com/mazipan/vue-string-filter) ![minified](https://badgen.net/bundlephobia/minzip/vue-string-filter) [![version](https://img.shields.io/npm/v/vue-string-filter.svg)](https://www.npmjs.com/package/vue-string-filter) [![downloads](https://img.shields.io/npm/dt/vue-string-filter.svg)](https://www.npmjs.com/package/vue-string-filter) [![Travis](https://img.shields.io/travis/mazipan/vue-string-filter.svg)](https://travis-ci.org/mazipan/vue-string-filter) [![codecov](https://codecov.io/gh/mazipan/vue-string-filter/branch/master/graph/badge.svg)](https://codecov.io/gh/mazipan/vue-string-filter)
 
@@ -47,18 +47,18 @@ Vue.use(VueStringFilter)
 ```javascript
 import Vue from 'vue'
 
-import append 'vue-string-filter/filters/append'
-import capitalize 'vue-string-filter/filters/capitalize'
-import cut 'vue-string-filter/filters/cut'
-import lowercase 'vue-string-filter/filters/lowercase'
-import remove_first 'vue-string-filter/filters/remove-first'
-import remove 'vue-string-filter/filters/remove'
-import replace_first 'vue-string-filter/filters/replace-first'
-import replace 'vue-string-filter/filters/replace'
-import slug 'vue-string-filter/filters/slug'
-import titlecase 'vue-string-filter/filters/titlecase'
-import truncate 'vue-string-filter/filters/truncate'
-import uppercase 'vue-string-filter/filters/uppercase'
+import append 'vue-string-filter/libs/append'
+import capitalize 'vue-string-filter/libs/capitalize'
+import cut 'vue-string-filter/libs/cut'
+import lowercase 'vue-string-filter/libs/lowercase'
+import remove_first 'vue-string-filter/libs/remove-first'
+import remove 'vue-string-filter/libs/remove'
+import replace_first 'vue-string-filter/libs/replace-first'
+import replace 'vue-string-filter/libs/replace'
+import slug 'vue-string-filter/libs/slug'
+import titlecase 'vue-string-filter/libs/titlecase'
+import truncate 'vue-string-filter/libs/truncate'
+import uppercase 'vue-string-filter/libs/uppercase'
 
 Vue.filter('cut', cut)
 Vue.filter('lowercase', lowercase)
