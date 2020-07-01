@@ -14,19 +14,13 @@
     "esModuleInterop": true,
     "allowSyntheticDefaultImports": true,
     "sourceMap": true,
+    "rootDir": "src/lib",
+    "outDir": "dist",
     "baseUrl": ".",
     "types": [
       "node",
       "jest"
     ],
-    "paths": {
-      "@/*": [
-        "src/*"
-      ],
-      "@lib/*": [
-        "src/lib/*"
-      ]
-    },
     "lib": [
       "esnext",
       "dom",
@@ -37,12 +31,8 @@
   "include": [
     "src/lib/**/*.ts",
     "src/lib/**/*.tsx",
-    "src/lib/**/*.vue",
-    "src/**/*.ts",
-    "src/**/*.tsx",
-    "src/**/*.vue",
-    "tests/**/*.ts",
-    "tests/**/*.tsx"
+    "src/lib/**/*.vue"
+
   ],
   "exclude": [
     "node_modules"

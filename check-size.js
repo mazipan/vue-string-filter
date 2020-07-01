@@ -27,7 +27,7 @@ function readDirs (dirname, onDir, onError) {
 }
 
 setTimeout(() => {
-  readDirs(path.resolve('./lib/'), async (filepath, filename) => {
+  readDirs(path.resolve('./dist/'), async (filepath, filename) => {
     try {
       console.log(chalk.greenBright(`> ${filename}: ${bytes(gzipSize.fileSync(filepath))}`))
     } catch (err) {
