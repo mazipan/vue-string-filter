@@ -9,7 +9,7 @@
     "test:unit": "vue-cli-service test:unit",
     "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint --fix",
-    "build:demo": "cross-env NODE_ENV=production vue-cli-service build",
+    "build:demo": "cross-env NODE_ENV=production vue-cli-service build --dest demo",
     "build:lib": "cross-env NODE_ENV=production tsc ./src/lib/index.ts -m CommonJS --outDir ./dist",
     "check:size": "node ./check-size.js",
     "dev": "vue-cli-service serve",
