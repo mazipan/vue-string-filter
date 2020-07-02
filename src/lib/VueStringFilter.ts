@@ -1,4 +1,3 @@
-import { VueConstructor } from 'vue'
 import lowercase from './lowercase'
 import uppercase from './uppercase'
 import capitalize from './capitalize'
@@ -13,7 +12,7 @@ import replaceFirst from './replace-first'
 import append from './append'
 
 class VueStringFilter implements VueStringFilter {
-  install (Vue: VueConstructor) {
+  install (Vue) {
     Vue.filter('lowercase', lowercase)
 
     Vue.filter('uppercase', uppercase)
