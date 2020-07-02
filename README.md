@@ -47,18 +47,22 @@ Vue.use(VueStringFilter)
 ```javascript
 import Vue from 'vue'
 
-import append from 'vue-string-filter/libs/append'
-import capitalize from 'vue-string-filter/libs/capitalize'
-import cut from 'vue-string-filter/libs/cut'
-import lowercase from 'vue-string-filter/libs/lowercase'
-import remove_first from 'vue-string-filter/libs/remove-first'
-import remove from 'vue-string-filter/libs/remove'
-import replace_first from 'vue-string-filter/libs/replace-first'
-import replace from 'vue-string-filter/libs/replace'
-import slug from 'vue-string-filter/libs/slug'
-import titlecase from 'vue-string-filter/libs/titlecase'
-import truncate from 'vue-string-filter/libs/truncate'
-import uppercase from 'vue-string-filter/libs/uppercase'
+// using named exports
+import { append, capitalize, cut... } from 'vue-string-filter'
+
+// directly
+import append from 'vue-string-filter/dist/append'
+import capitalize from 'vue-string-filter/dist/capitalize'
+import cut from 'vue-string-filter/dist/cut'
+import lowercase from 'vue-string-filter/dist/lowercase'
+import remove_first from 'vue-string-filter/dist/remove-first'
+import remove from 'vue-string-filter/dist/remove'
+import replace_first from 'vue-string-filter/dist/replace-first'
+import replace from 'vue-string-filter/dist/replace'
+import slug from 'vue-string-filter/dist/slug'
+import titlecase from 'vue-string-filter/dist/titlecase'
+import truncate from 'vue-string-filter/dist/truncate'
+import uppercase from 'vue-string-filter/dist/uppercase'
 
 Vue.filter('append', append)
 Vue.filter('capitalize', capitalize)

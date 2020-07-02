@@ -1,3 +1,4 @@
+import VueStringFilter from './VueStringFilter'
 export { default as lowercase } from './lowercase'
 export { default as uppercase } from './uppercase'
 export { default as capitalize } from './capitalize'
@@ -10,3 +11,5 @@ export { default as removeFirst } from './remove-first'
 export { default as replace } from './replace'
 export { default as replaceFirst } from './replace-first'
 export { default as append } from './append'
+
+export default VueStringFilter

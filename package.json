@@ -9,18 +9,17 @@
     "test:unit": "vue-cli-service test:unit",
     "test": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint --fix",
-    "build:demo": "cross-env NODE_ENV=production vue-cli-service build",
-    "build:lib": "cross-env NODE_ENV=production tsc ./src/lib/VueStringFilter.ts -m CommonJS --outDir ./libs",
+    "build:demo": "cross-env NODE_ENV=production vue-cli-service build --dest demo",
+    "build:lib": "cross-env NODE_ENV=production tsc ./src/lib/index.ts -m CommonJS --outDir ./dist",
     "check:size": "node ./check-size.js",
     "dev": "vue-cli-service serve",
     "prepare": "yarn build:lib"
   },
-  "main": "libs/VueStringFilter.js",
-  "module": "libs/VueStringFilter.js",
-  "unpkg": "libs/VueStringFilter.js",
+  "main": "dist/index.js",
+  "module": "dist/index.js",
+  "unpkg": "dist/index.js",
   "files": [
-    "libs",
-    "types"
+    "dist"
   ],
   "dependencies": {},
   "devDependencies": {
@@ -82,7 +81,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "jsdelivr": "libs/VueStringFilter.js",
+  "jsdelivr": "dist/VueStringFilter.js",
   "keywords": [
     "vue string",
     "vue string filter",
@@ -99,5 +98,5 @@
     "type": "git",
     "url": "https://github.com/mazipan/vue-string-filter.git"
   },
-  "typings": "types/index.d.ts"
+  "typings": "dist/index.d.ts"
 }
