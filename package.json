@@ -56,7 +56,7 @@
     "husky": "4.2.5",
     "jest": "^26.1.0",
     "lint-staged": "10.2.11",
-    "node-sass": "4.13.0",
+    "node-sass": "4.13.1",
     "prismjs": "1.21.0",
     "register-service-worker": "1.7.1",
     "sass-loader": "8.0.0",
