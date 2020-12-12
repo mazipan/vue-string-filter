@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/vue-string-filter/precache-manifest.4f65fafc1e933dfeb19c69412b6860ea.js"
+  "/vue-string-filter/precache-manifest.7031ff0738d52f3bb5695d7c98a3ca58.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "vue-string-filter"});
